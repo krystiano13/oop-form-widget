@@ -15,6 +15,13 @@ class Button
 
     public function __invoke():string
     {
-        return "<button class='m-4' type='{$this->type}'>{$this->content}</button>";
+        return <<<BUTTON
+            <button 
+                class='m-4 cursor-pointer bg-emerald-400 p-2 pr-16 pl-16 text-amber-50' 
+                type='{$this->type}'>
+                {$this->content}
+            </button>
+        BUTTON;
+
     }
 }
