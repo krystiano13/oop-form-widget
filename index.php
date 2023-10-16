@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="output.css" />
     </head>
     <body>
-        <main class="w-full h-full flex flex-col justify-center items-center">
+        <main class="w-full h-full flex flex-col justify-center items-center bg-blue-50">
         <?php
             echo $form -> render();
         ?>
