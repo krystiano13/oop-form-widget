@@ -19,10 +19,13 @@
         <title>OOP Form</title>
         <meta name="author" content="Krystian Zieja" >
         <meta name="keywords" content="oop, form, abstraction, php" >
+        <link rel="stylesheet" href="output.css" />
     </head>
     <body>
+        <main class="w-full h-full flex flex-col justify-center items-center">
         <?php
             echo $form -> render();
         ?>
+        </main>
     </body>
 </html>
