@@ -13,7 +13,6 @@ class Input
         $this->type = $type;
         $this->placeholder = $placeholder;
         $this->name = $name;
-
     }
 
     public function __invoke():string
