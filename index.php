@@ -1,3 +1,16 @@
+<?php
+    require_once 'vendor/autoload.php';
+
+    $userInput = new \App\Input('text','username','username');
+    $passwordInput = new \App\Input('password', 'password', 'password');
+    $button = new \App\Button('submit','Log In');
+    $form = new \App\Form('/','get');
+
+    $form->insert($userInput());
+    $form->insert($passwordInput());
+    $form->insert($button());
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,6 +21,8 @@
         <meta name="keywords" content="oop, form, abstraction, php" >
     </head>
     <body>
-
+        <?php
+            echo $form -> render();
+        ?>
     </body>
 </html>

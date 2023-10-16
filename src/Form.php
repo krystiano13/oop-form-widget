@@ -19,6 +19,7 @@ class Form
         $this->action = $action;
         $this->method = $method;
         $this->elements = [];
+        $this->content = "";
     }
 
     public function insert(string $element):void {
@@ -27,7 +28,7 @@ class Form
 
     public function render() {
         foreach ($this->elements as $item) {
-            $this->content += $item;
+            $this->content .= $item;
         }
 
         return <<<FORM
