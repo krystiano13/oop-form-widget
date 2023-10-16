@@ -32,7 +32,7 @@ class Form
         }
 
         return <<<FORM
-            <form>
+            <form class="flex rounded-xl justify-center flex-col items-center bg-blue-500 w-2/12 h-1/3 p-2">
             {$this->content}
             </form>
         FORM;

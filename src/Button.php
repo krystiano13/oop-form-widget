@@ -15,6 +15,6 @@ class Button
 
     public function __invoke():string
     {
-        return "<button type='{$this->type}'>{$this->content}</button>";
+        return "<button class='m-4' type='{$this->type}'>{$this->content}</button>";
     }
 }
