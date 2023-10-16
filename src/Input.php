@@ -17,6 +17,14 @@ class Input
 
     public function __invoke():string
     {
-        return "<input class='m-4' type='{$this->type}' placeholder='{$this->placeholder}' name='{$this->name}' />";
+        return <<<INPUT
+            <input 
+                class='placeholder-amber-50 bg-blue-950 text-amber-50 m-4 p-1.5 outline-0' 
+                type='{$this->type}' 
+                placeholder='{$this->placeholder}' 
+                name='{$this->name}' 
+            />
+        INPUT;
+
     }
 }
